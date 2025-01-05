@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    animation: gradientBG 1s infinite alternate;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav {
+    background: linear-gradient(90deg, #000000, #434343);
+    color: white;
+    padding: 15px 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #555555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin: 0 30px;
+    font-weight: 900;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.logo:hover {
+    color: #ff4081;
+    transform: scale(1.1);
+    text-shadow: 0 0 5px #ff4081;
+    transition: all 0.3s ease-in-out;
+}
+
+ul {
+    display: flex;
+    margin: 0 30px;
+    align-items: center;
+    list-style: none;
+}
+
+ol {
+    align-items: center;
+    display: flex;
+    margin: 0 30px;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+ul>li {
+    margin: 0 18px;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+ul>li:hover {
+    color: #ff4081;
+    transform: scale(1.1);
+    text-shadow: 0 0 5px #ff4081;
+}
+
+ul>li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+ul>li a:hover {
+    color: #ff4081;
+}
+
+table {
+    width: 100%;
+    border: 2px solid #555555;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+
+}
+
+td,
+tr {
+    border: 2px solid #555555;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 30px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    margin: 30px 0;
+    text-align: center;
+    font-weight: 600;
+    color: #333333;
+}
+
+.btn,
+.btnsm {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #000000, #434343);
+    color: white;
+    font-weight: 900;
+    border: 2px solid #aaaaaa;
+    border-radius: 50px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btnsm:hover {
+    background: #ff4081;
+    color: #ffffff;
+    border-color: #ff4081;
+}
+
+img {
+    cursor: pointer;
+    position: relative;
+    bottom: 7px;
+    width: 20px;
+    height: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+input::placeholder {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+input:focus::placeholder {
+    opacity: 1;
+}
+
+input:focus,
+textarea:focus {
+    transition: border 0.3s ease-in-out;
+    border: 2px solid #ff4081;
+}
+
+#alert {
+    display: none;
+}
+
+.github {
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+
+
+.para {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+span a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: #670022;
+}
+
+span a:hover {
+    color: #ff4081;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .logo {
+        margin: 0 15px;
+        font-size: 22px;
+    }
+
+    ul {
+        margin: 0 15px;
+    }
+
+    ul>li {
+        margin: 0 10px;
+    }
+
+    .container {
+        max-width: 95vw;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 24px;
+    }
+
+    .btn,
+    .btnsm {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 10px;
+    }
+
+    ul>li {
+        margin: 5px 0;
+    }
+
+    .container {
+        padding: 8px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 20px;
+    }
+
+    .btn,
+    .btnsm {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
