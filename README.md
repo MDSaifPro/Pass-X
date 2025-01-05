@@ -6,7 +6,7 @@ Welcome to **PassX**, your ultimate tool for managing passwords with ease and se
 
 <div align="center">
   <br />
-    <a href="https://pass-x.netlify.app/" target="_blank">
+    <a href="https://pass-x-dev.netlify.app/" target="_blank">
       <img src="screenshot.png" style="border-radius: 10px" alt="Project Banner">
     </a>
   <br />
